@@ -1,0 +1,324 @@
+/*====================================================
+
+            GREEN HARVEST WEBSITE
+             responsive.css
+
+======================================================*/
+
+/*====================================================
+
+                LARGE LAPTOPS
+
+======================================================*/
+
+@media (max-width:1200px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+}
+
+/*====================================================
+
+                    TABLETS
+
+======================================================*/
+
+@media (max-width:992px){
+
+    section{
+
+        padding:90px 0;
+
+    }
+
+    .section-title h2{
+
+        font-size:2.5rem;
+
+    }
+
+    .section-title p{
+
+        width:90%;
+
+    }
+
+    .hero-text{
+
+        width:100%;
+
+    }
+
+    .hero h1{
+
+        font-size:4rem;
+
+    }
+
+    .about-content{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contact-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-content{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        align-items:center;
+
+    }
+
+}
+
+/*====================================================
+
+                MOBILE MENU
+
+======================================================*/
+
+@media (max-width:768px){
+
+    .menu-btn{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:6px;
+
+        cursor:pointer;
+
+    }
+
+    .menu-btn span{
+
+        width:30px;
+
+        height:3px;
+
+        background:white;
+
+        border-radius:5px;
+
+    }
+
+    .nav-links{
+
+        position:fixed;
+
+        top:80px;
+
+        right:-100%;
+
+        width:260px;
+
+        height:100vh;
+
+        background:var(--primary);
+
+        flex-direction:column;
+
+        padding:40px;
+
+        transition:.4s;
+
+        gap:25px;
+
+    }
+
+    .nav-links.active{
+
+        right:0;
+
+    }
+
+    .hero{
+
+        text-align:center;
+
+    }
+
+    .hero h1{
+
+        font-size:3.2rem;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    .about-text{
+
+        text-align:center;
+
+    }
+
+    .timeline::before{
+
+        left:30px;
+
+    }
+
+    .timeline-item{
+
+        width:100%;
+
+        left:0 !important;
+
+        text-align:left;
+
+        padding-left:90px;
+
+        padding-right:20px;
+
+    }
+
+    .timeline-icon{
+
+        left:-5px !important;
+
+        right:auto;
+
+    }
+
+}
+
+/*====================================================
+
+                SMALL PHONES
+
+======================================================*/
+
+@media (max-width:576px){
+
+    .section-title h2{
+
+        font-size:2rem;
+
+    }
+
+    .hero{
+
+        min-height:100vh;
+
+        padding-top:100px;
+
+    }
+
+    .hero-subtitle{
+
+        font-size:.85rem;
+
+        letter-spacing:2px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .hero-description{
+
+        font-size:.95rem;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .product-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .features-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .logo-text h2{
+
+        font-size:1.2rem;
+
+    }
+
+    .logo-text span{
+
+        font-size:.7rem;
+
+    }
+
+    .footer{
+
+        text-align:center;
+
+    }
+
+}
+
+/*====================================================
+
+            EXTRA SMALL DEVICES
+
+======================================================*/
+
+@media (max-width:380px){
+
+    .hero h1{
+
+        font-size:2rem;
+
+    }
+
+    .section-title h2{
+
+        font-size:1.8rem;
+
+    }
+
+    .product-info{
+
+        padding:20px;
+
+    }
+
+    .feature-card{
+
+        padding:30px 20px;
+
+    }
+
+}

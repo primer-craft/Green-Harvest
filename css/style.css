@@ -1,0 +1,1157 @@
+/*====================================================
+
+            GREEN HARVEST WEBSITE
+                style.css
+
+        Premium Kerala Cardamom Supplier
+           Quality You Can Trust.
+
+======================================================*/
+
+/*====================================================
+
+                GOOGLE FONTS
+
+======================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*====================================================
+
+                ROOT VARIABLES
+
+======================================================*/
+
+:root{
+
+    --primary:#0F3D2E;
+
+    --secondary:#1B5E43;
+
+    --accent:#D4AF37;
+
+    --white:#ffffff;
+
+    --light:#F8F8F5;
+
+    --dark:#222222;
+
+    --grey:#666666;
+
+    --glass:rgba(255,255,255,0.15);
+
+    --shadow:0 10px 30px rgba(0,0,0,.12);
+
+    --radius:18px;
+
+}
+
+/*====================================================
+
+                RESET
+
+======================================================*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--light);
+
+    color:var(--dark);
+
+    line-height:1.8;
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1250px;
+
+    margin:auto;
+
+}
+
+section{
+
+    padding:110px 0;
+
+}
+
+/*====================================================
+
+                SECTION TITLE
+
+======================================================*/
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-title span{
+
+    color:var(--accent);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+.section-title h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:3rem;
+
+    margin-top:10px;
+
+    color:var(--primary);
+
+}
+
+.section-title p{
+
+    width:60%;
+
+    margin:20px auto 0;
+
+    color:var(--grey);
+
+}
+
+/*====================================================
+
+                NAVBAR
+
+======================================================*/
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    padding:18px 0;
+
+    backdrop-filter:blur(15px);
+
+    background:rgba(10,35,25,.25);
+
+    transition:.4s;
+
+}
+
+.nav-container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:100px;
+
+}
+
+.logo-text h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:white;
+
+    letter-spacing:2px;
+
+}
+
+.logo-text span{
+
+    color:#dddddd;
+
+    font-size:.8rem;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--accent);
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--accent);
+
+    transition:.4s;
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+.menu-btn{
+
+    display:none;
+
+}
+
+/*====================================================
+
+                HERO
+
+======================================================*/
+
+.hero{
+
+    position:relative;
+
+    height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:url("../assets/images/hero/cardamom.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.hero-text{
+
+    width:650px;
+
+}
+
+.hero-subtitle{
+
+    color:var(--accent);
+
+    letter-spacing:4px;
+
+    margin-bottom:20px;
+
+}
+
+.hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:white;
+
+    font-size:5rem;
+
+    line-height:1.1;
+
+    margin-bottom:30px;
+
+}
+
+.hero-description{
+
+    color:#f5f5f5;
+
+    font-size:1.1rem;
+
+    margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn{
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    transition:.35s;
+
+    font-weight:600;
+
+}
+
+.glass-btn{
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    color:white;
+
+}
+
+.glass-btn:hover{
+
+    background:white;
+
+    color:var(--primary);
+
+}
+
+.outline-btn{
+
+    border:2px solid white;
+
+    color:white;
+
+}
+
+.outline-btn:hover{
+
+    background:white;
+
+    color:var(--primary);
+
+}
+
+.scroll-down{
+
+    position:absolute;
+
+    bottom:35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:white;
+
+    font-size:2rem;
+
+}
+/*====================================================
+
+                    ABOUT
+
+======================================================*/
+
+.about{
+
+    background:white;
+
+}
+
+.about-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:70px;
+
+}
+
+.about-image{
+
+    overflow:hidden;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+.about-image img{
+
+    transition:.5s;
+
+}
+
+.about-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.about-text h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2.4rem;
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+}
+
+.about-text p{
+
+    color:var(--grey);
+
+    margin-bottom:20px;
+
+    text-align:justify;
+
+}
+
+/*====================================================
+
+                PRODUCTS
+
+======================================================*/
+
+.products{
+
+    background:var(--light);
+
+}
+
+.product-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+}
+
+.product-card{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.product-card img{
+
+    height:280px;
+
+    object-fit:cover;
+
+}
+
+.product-info{
+
+    padding:30px;
+
+}
+
+.product-info h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:var(--primary);
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+.product-info p{
+
+    margin-bottom:12px;
+
+    color:var(--grey);
+
+}
+
+.product-info strong{
+
+    color:var(--primary);
+
+}
+
+.product-btn{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    transition:.35s;
+
+}
+
+.product-btn:hover{
+
+    background:var(--secondary);
+
+    transform:translateY(-3px);
+
+}
+
+/*====================================================
+
+                PROCESS
+
+======================================================*/
+
+.process{
+
+    background:white;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:var(--accent);
+
+    transform:translateX(-50%);
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    width:50%;
+
+    padding:30px 50px;
+
+    margin-bottom:60px;
+
+}
+
+.timeline-item:nth-child(odd){
+
+    left:0;
+
+    text-align:right;
+
+}
+
+.timeline-item:nth-child(even){
+
+    left:50%;
+
+}
+
+.timeline-icon{
+
+    width:70px;
+
+    height:70px;
+
+    background:var(--primary);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    font-size:1.8rem;
+
+    position:absolute;
+
+    top:25px;
+
+    right:-35px;
+
+    border:6px solid white;
+
+    box-shadow:var(--shadow);
+
+}
+
+.timeline-item:nth-child(even) .timeline-icon{
+
+    left:-35px;
+
+}
+
+.timeline-item h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2rem;
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.timeline-item p{
+
+    color:var(--grey);
+
+    line-height:1.8;
+
+}
+/*====================================================
+
+            WHY CHOOSE GREEN HARVEST
+
+======================================================*/
+
+.why-us{
+
+    background:var(--light);
+
+}
+
+.features-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+}
+
+.feature-card{
+
+    background:white;
+
+    padding:40px 30px;
+
+    border-radius:var(--radius);
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+    border:1px solid rgba(0,0,0,.05);
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--accent);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.feature-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:2rem;
+
+}
+
+.feature-card h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2rem;
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:var(--grey);
+
+    line-height:1.8;
+
+}
+
+/*====================================================
+
+                CONTACT
+
+======================================================*/
+
+.contact{
+
+    background:white;
+
+}
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.2fr;
+
+    gap:60px;
+
+    align-items:start;
+
+}
+
+.contact-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.contact-item{
+
+    background:var(--light);
+
+    padding:25px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+.contact-item h3{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+    font-size:1.2rem;
+
+}
+
+.contact-item p{
+
+    color:var(--grey);
+
+}
+
+.whatsapp-btn{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.whatsapp-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+    width:100%;
+
+    padding:18px 22px;
+
+    border:none;
+
+    outline:none;
+
+    background:var(--light);
+
+    border-radius:var(--radius);
+
+    font-size:1rem;
+
+    font-family:'Poppins',sans-serif;
+
+    transition:.3s;
+
+}
+
+.contact-form input:focus,
+
+.contact-form textarea:focus{
+
+    box-shadow:0 0 0 2px var(--accent);
+
+}
+
+.submit-btn{
+
+    width:220px;
+
+    padding:18px;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:50px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.submit-btn:hover{
+
+    background:var(--secondary);
+
+    transform:translateY(-4px);
+
+}
+
+/*====================================================
+
+                    FOOTER
+
+======================================================*/
+
+.footer{
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:70px 0 30px;
+
+}
+
+.footer-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-logo img{
+
+    width:200px;
+
+    margin-bottom:15px;
+
+}
+
+.footer-logo h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+.footer-logo p{
+
+    color:#dcdcdc;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:var(--accent);
+
+    padding-left:8px;
+
+}
+
+.footer hr{
+
+    margin:45px 0 25px;
+
+    border:none;
+
+    height:1px;
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    color:#d6d6d6;
+
+}
+
+/*====================================================
+
+                COMMON EFFECTS
+
+======================================================*/
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+::selection{
+
+    background:var(--accent);
+
+    color:white;
+
+}
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ececec;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--secondary);
+
+}
