@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 sitemap:
-https://primer-craft.github.io/Green-Hravest/sitemap.xml
+https://primer-craft.github.io/PodGrain/sitemap.xml
