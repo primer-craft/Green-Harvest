@@ -1,4 +1,4 @@
-# 🌿 Green Harvest
+# 🌿 PODGRAIN
 
 A premium Kerala cardamom business website built using HTML, CSS, and JavaScript.
 
